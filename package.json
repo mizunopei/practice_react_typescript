@@ -1,0 +1,7 @@
+{
+    "name": "practice_react_typescript",
+    "version": "1.0.0",
+    "scripts": {
+        "start": "echo ello!!! package.json"
+    }
+}
