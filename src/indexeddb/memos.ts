@@ -9,7 +9,7 @@ export interface MemoRecord {
 
 const database = new Dexie('markdown-editor') // Dexieのインスタンスを生成
 database.version(1).stores({ memos:'&datetime'}) // テーブル定義
-const memos: Dexie.Table<MemoRecord, string> = database.table('memos')
+const memos: Dexie.Table<MemoRecord, string> = database.table('memos') // テーブル作成
 
 export const putMemo = async (title: string, text: string): Promise<void> => {
   const datetime = new Date().toISOString()

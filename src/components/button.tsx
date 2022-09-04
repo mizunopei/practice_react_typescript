@@ -13,7 +13,7 @@ const StyledButton = styled.button`
 `
 
 interface Props {
-	children: string
+	children: string // ボタン内に表示するテキスト
 	onClick: () => void
 }
 
